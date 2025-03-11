@@ -314,6 +314,8 @@ section {
   margin: auto 0;
 }
 
+
+
 /* EXPERIENCE SECTION */
 
 #experience {
@@ -429,4 +431,92 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* Skills Section Styling */
+.skills-section {
+  background-color: #ECF2FF; /* Light pastel navy */
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 2x2 Grid Layout */
+.experience-details-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Individual Skill Category Box */
+.details-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Hover Effect for Cards */
+.details-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Title Styling */
+h2.experience-sub-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1A1A2E;
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Bullet Point Container */
+.article-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2-column bullet point alignment */
+  gap: 12px;
+}
+
+/* Individual Bullet Point */
+article {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+/* Checkmark Icon */
+article img.icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Text Styling */
+h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .experience-details-container {
+      grid-template-columns: 1fr; /* Switches to single-column layout on small screens */
+  }
 }
