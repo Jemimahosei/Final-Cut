@@ -43,6 +43,8 @@ nav {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
+  position: relative; /* Add this line */
+  z-index: 1000;       /* And this for dropdown stacking */
 }
 
 a {
@@ -519,4 +521,48 @@ p {
   .experience-details-container {
       grid-template-columns: 1fr; /* Switches to single-column layout on small screens */
   }
+}
+
+/* Dropdown Styles for Desktop & Mobile */
+
+/* Desktop & Mobile shared dropdown structure */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  background-color: white;
+  list-style: none;
+  padding: 0.5rem 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+}
+
+/* Show when .active class is added via JS */
+.dropdown.active .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* Mobile version inherits from desktop */
+#hamburger-nav .dropdown-menu {
+  position: static;
+  box-shadow: none;
+  padding-left: 1rem;
 }

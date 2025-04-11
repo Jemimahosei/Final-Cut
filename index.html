@@ -9,6 +9,8 @@
   
 
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
   </head>
   <body>
     <nav id="desktop-nav">
@@ -17,7 +19,18 @@
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li class="dropdown" id="projects-dropdown">
+            <a href="javascript:void(0)" id="projects-toggle">Projects ▾</a>
+            <ul class="dropdown-menu" id="projects-menu">
+              <li><a href="#projects">PM </a></li>
+              <li><a href="#dataprojects">Data </a></li>
+              <li><a href="#sweprojects">Dev </a></li>
+              <li><a href="#designprojects">Design </a></li>
+            </ul>
+          </li>
+          
+          
+          </li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -33,7 +46,16 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li class="dropdown" id="mobile-projects-dropdown">
+            <a href="javascript:void(0)" onclick="toggleMobileProjectsDropdown()">Projects ▾</a>
+            <ul class="dropdown-menu" id="mobile-projects-menu">
+              <li><a href="#projects" onclick="toggleMenu()">PM Projects</a></li>
+              <li><a href="#dataprojects" onclick="toggleMenu()">Data Projects</a></li>
+              <li><a href="#sweprojects" onclick="toggleMenu()">Dev Projects</a></li>
+              <li><a href="#designprojects" onclick="toggleMenu()">Design Projects</a></li>
+            </ul>
+          </li>
+          
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -183,7 +205,7 @@
       </section>
     </section>
       
-    <section id="projects">
+    <section id="projects" data-section="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">PM Projects</h1>
       <div class="experience-details-container">
@@ -252,13 +274,13 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Product Design </h2>
+            <h2 class="experience-sub-title project-title">Othellonia </h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://medium.com/@jko35/youtube-as-a-study-tool-overcoming-distractions-for-focused-learning-3a314a7ec37c'"
-              >
-                UI/UX case study
+                onclick="window.open('./assets/ott.pdf')"
+            </button>
+              case study doc
               </button>
             </div>
           </div>
@@ -271,7 +293,7 @@
         onclick="location.href='./#contact'"
       />
     </section>
-    <section id="dataprojects">
+    <section id="dataprojects" data-section="dataprojects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Data Projects</h1>
       <div class="experience-details-container">
@@ -359,7 +381,7 @@
         onclick="location.href='./#contact'"
       />
     </section>
-    <section id="sweprojects">
+    <section id="sweprojects" data-section="sweprojects">
       <p class="section__text__p1">Browse My Recent </p>
       <h1 class="title">Development Projects</h1>
       <div class="experience-details-container">
@@ -447,7 +469,7 @@
         onclick="location.href='./#contact'"
       />
     </section>
-    <section id="sweprojects">
+    <section id="designprojects" data-section="designprojects">
       <p class="section__text__p1">Browse My Recent </p>
       <h1 class="title"> UI/UX(figma) Projects</h1>
       <div class="experience-details-container">
@@ -564,7 +586,7 @@
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects">PM Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -572,5 +594,7 @@
       <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
   </body>
 </html>

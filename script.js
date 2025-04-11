@@ -30,3 +30,23 @@ document.querySelectorAll(".menu-links a").forEach(link => {
     toggleMenu();
   });
 });
+function toggleMobileProjectsDropdown() {
+  const dropdown = document.getElementById("mobile-projects-dropdown");
+  dropdown.classList.toggle("active");
+}
+// Toggle desktop Projects dropdown
+document.addEventListener("DOMContentLoaded", () => {
+  const dropdown = document.getElementById("projects-dropdown");
+  const toggle = document.getElementById("projects-toggle");
+
+  toggle.addEventListener("click", () => {
+    dropdown.classList.toggle("active");
+  });
+
+  // Optional: close if clicked outside
+  document.addEventListener("click", (event) => {
+    if (!dropdown.contains(event.target)) {
+      dropdown.classList.remove("active");
+    }
+  });
+});
