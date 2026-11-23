@@ -201,3 +201,4 @@ dd{margin:0 0 10px;color:#444;font-size:15px;line-height:1.6}
 
 @media(min-width:761px){.jobs .job{display:grid;grid-template-rows:subgrid;grid-row:span 4;row-gap:0}.job .jshot{margin-bottom:16px}.job .bd p:first-child{margin-top:8px}}
 .jshot img{object-position:center}
+.thumb.vid{background:#1e1e1e}.thumb.vid video{width:100%;height:100%;object-fit:contain;display:block;background:#1e1e1e}
