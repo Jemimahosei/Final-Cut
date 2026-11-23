@@ -197,3 +197,4 @@ dd{margin:0 0 10px;color:#444;font-size:15px;line-height:1.6}
 .line.nf{flex:none}
 .pc .rm{flex:1 1 auto}
 .job .rm p{font-size:15px}
+.rm summary::marker{content:""}
