@@ -63,6 +63,15 @@ main{flex:1 0 auto}
 .cap{margin:8px 4px 0;font-size:14px;line-height:22px;color:#555}
 .feat-copy h3{margin:0;font-weight:600;font-size:34px;line-height:1.15}
 .ftag{margin:4px 0 0;font-size:15px;line-height:24px;color:#555}
+.accs{margin:14px 0 0;border-bottom:1.5px solid #dedede}
+.acc{border-top:1.5px solid #dedede}
+.acc summary{list-style:none;cursor:pointer;min-height:48px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-weight:600;font-size:15px;line-height:24px;color:#111}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:"+";font-weight:400;font-size:22px;line-height:1;color:#555}
+.acc summary::after{transition:transform .15s ease-out}
+.acc[open] summary::after{transform:rotate(45deg)}
+.acc summary:focus-visible{outline:2px solid #111;outline-offset:2px;border-radius:6px}
+.acc p{margin:0 0 14px;color:#444;font-size:15px;line-height:1.6}
 dl{margin:16px 0 0}
 dt{font-weight:600;font-size:15px;line-height:24px}
 dd{margin:0 0 10px;color:#444;font-size:15px;line-height:1.6}
@@ -144,6 +153,7 @@ dd{margin:0 0 10px;color:#444;font-size:15px;line-height:1.6}
  .cap{display:none}
  .feat-copy h3{font-size:26px;margin-top:0}
  .ftag{font-size:14px;line-height:22px;margin-top:2px}
+ .accs{margin-top:10px}
  dl{margin-top:10px}
  dt{font-size:14px;line-height:22px}
  dd{font-size:15px;line-height:1.6;margin-bottom:8px}
