@@ -187,3 +187,13 @@ dd{margin:0 0 10px;color:#444;font-size:15px;line-height:1.6}
  .cbtns .pill{padding:0 18px;font-size:14px}
  .foot{padding:20px;font-size:13px;line-height:22px}
 }
+
+.rm{margin-top:8px}
+.rm summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;min-height:44px;font-weight:600;font-size:14px;color:#111;text-decoration:underline;text-underline-offset:3px}
+.rm summary::-webkit-details-marker{display:none}
+.rm summary:focus-visible{outline:2px solid #111;outline-offset:2px;border-radius:6px}
+.rm .c{display:none}.rm[open] .c{display:inline}.rm[open] .o{display:none}
+.rm p{margin:0;color:#444;font-size:15px;line-height:1.6}
+.line.nf{flex:none}
+.pc .rm{flex:1 1 auto}
+.job .rm p{font-size:15px}
