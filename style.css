@@ -198,3 +198,6 @@ dd{margin:0 0 10px;color:#444;font-size:15px;line-height:1.6}
 .pc .rm{flex:1 1 auto}
 .job .rm p{font-size:15px}
 .rm summary::marker{content:""}
+
+@media(min-width:761px){.jobs .job{display:grid;grid-template-rows:subgrid;grid-row:span 4;row-gap:0}.job .jshot{margin-bottom:16px}.job .bd p:first-child{margin-top:8px}}
+.jshot img{object-position:center}
